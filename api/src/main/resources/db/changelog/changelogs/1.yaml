@@ -1,0 +1,8 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Areeba Fatima
+      changes:
+        - sqlFile:
+            path:  db/changelog/sql/1-users.sql
+            splitStatements: true
