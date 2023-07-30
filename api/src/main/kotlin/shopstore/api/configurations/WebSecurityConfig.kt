@@ -25,11 +25,10 @@ import javax.servlet.http.HttpServletResponse
 @EnableWebSecurity
 class WebSecurityConfig(
     val jwtAuthenticationEntryPoint: JwtAuthenticationEntryPoint,
-    val jwtRequestFilter: JwtRequestFilter
+    val jwtRequestFilter: JwtRequestFilter,
 ) {
-
     @Value("\${anonymous.urls}")
-    private val anonymousUrls : Array<String> = arrayOf("")
+    private val anonymousUrls: Array<String> = arrayOf("/authenticate")
 
     @Bean
     @Throws(Exception::class)
@@ -49,7 +48,7 @@ class WebSecurityConfig(
             .csrf()
             .disable()
             .authorizeRequests()
-            .antMatchers("/authenticate")
+            .antMatchers("/**")
             .permitAll()
             .anyRequest()
             .authenticated()

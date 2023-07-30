@@ -21,7 +21,7 @@ class JwtUserDetailsService(
             ?.let { JwtUser(
                 it.id.toString(),
                 it.firstName+"."+it.lastName,
-                it.password,
+                it.password!!,
                 it.emailAddress,
                 Date(), // change to user created date
                 emptyList()

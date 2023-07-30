@@ -10,6 +10,7 @@ data class ResponseDto<T>(
     val error: ErrorDto?,
     val success: Boolean
 ) {
+
     constructor() : this(HttpStatus.OK,null, null, true)
 }
 
@@ -19,6 +20,13 @@ fun <T> ResponseDto<T>.makeSuccessResponse(data: T) =
         status = HttpStatus.OK,
         success = true
     )
+
+fun <T> ResponseDto<T>.makeSuccessResponse() =
+    this.copy(
+        status = HttpStatus.OK,
+        success = true
+    )
+
 
 fun <T> ResponseDto<T>.makeSuccessResponse(data: T, status: HttpStatus) =
     this.copy(

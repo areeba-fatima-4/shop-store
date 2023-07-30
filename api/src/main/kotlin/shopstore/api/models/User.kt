@@ -11,10 +11,9 @@ data class User(
     val lastName: String,
     val phone: String, //add regex for pak phone
     val emailAddress: String, //add regex
-    val password: String,
+    val password: String?,
     val active: Boolean,
     val type: UserType,
-    val jwtToken: String
 ) : BaseCompleteModel<UserDto, UserEntity>() {
 
     init {
@@ -30,7 +29,6 @@ data class User(
             password,
             active,
             type,
-            jwtToken
         )
 
     override fun toDto(): UserDto =
@@ -43,6 +41,5 @@ data class User(
             password,
             active,
             type,
-            jwtToken
         )
 }

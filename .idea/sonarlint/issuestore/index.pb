@@ -7,8 +7,6 @@ c
 3api/src/main/kotlin/shopstore/api/ApiApplication.kt,f/8/f81a818f48f4b115418c304cacb744a78ec46911
 D
 api/build.gradle.kts,b/e/be15954d0f5a5b97c5c8371a82f36a1fa3ab405d
-j
-:api/src/main/kotlin/shopstore/api/domain/enums/UserType.kt,c/c/cc8a4689f08bf78dfd4dc1856e4c4e7059d01c92
 p
 @api/src/main/kotlin/shopstore/api/repositories/BaseRepository.kt,3/0/30b9171e441b10e390c7b41652285b5656e9b005
 p
@@ -17,8 +15,6 @@ i
 9api/src/main/kotlin/shopstore/api/services/UserService.kt,d/7/d717d534194df77e1ac5067f853f566922fd7f86
 i
 9api/src/main/kotlin/shopstore/api/services/BaseService.kt,4/d/4dc522334f386870b3348303bb2e2b75a8d21a25
-o
-?api/src/main/kotlin/shopstore/api/controllers/UserController.kt,1/7/17ceb6a0cc2c1b15b213fecab45ff028d245967b
 o
 ?api/src/main/kotlin/shopstore/api/controllers/BaseController.kt,4/2/42b4718ff14fd0af0227ae52bf3c39c39093af73
 e
@@ -33,10 +29,6 @@ m
 =api/src/main/kotlin/shopstore/api/configurations/JpaConfig.kt,8/0/80522279bc2740d4bdb9a52edebfd27ec219521c
 D
 logs/application.log,0/6/0641b236affda539908a9844d4ee20d152194063
-f
-6api/src/main/kotlin/shopstore/api/domain/UserEntity.kt,1/7/170a0fd0aaea8e62db07aa0721a996f5f395ac2c
-`
-0api/src/main/kotlin/shopstore/api/models/User.kt,5/c/5c354ab7aabf41c5067ad36ebe05549c48c7d3aa
 e
 5api/src/main/kotlin/shopstore/api/models/BaseModel.kt,4/4/4414488b7599d91da9fec273275d931534fddbf3
 a

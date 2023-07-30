@@ -30,11 +30,14 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.projectlombok:lombok:1.18.24")
 	implementation("io.jsonwebtoken:jjwt:0.9.1")
+	implementation("com.vladmihalcea:hibernate-types-52:2.20.0")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 
 	runtimeOnly("org.postgresql:postgresql")
+
+
 }
 
 tasks.withType<KotlinCompile> {

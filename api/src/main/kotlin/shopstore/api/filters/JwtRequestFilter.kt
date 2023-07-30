@@ -27,13 +27,13 @@ class JwtRequestFilter(
         filterChain: FilterChain
     ) {
         SecurityContextHolder.getContext().authentication
-            ?.let { getTokenFromRequest(request) }
+            ?:let { getTokenFromRequest(request) }
             ?.let { token ->
                 val email = jwtTokenUtil.getEmailFromToken(token)
                 val jwtUser = jwtUserDetailsService.loadUserByUsername(email) as JwtUser
                 if (jwtTokenUtil.validateToken(token, jwtUser))
                     updateSecurityContext(getAuthToken(jwtUser, request))
-            } ?: throw Exception()
+            }
 
         filterChain.doFilter(request, response)
     }

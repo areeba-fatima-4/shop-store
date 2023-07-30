@@ -23,6 +23,4 @@ class AuthenticationController(
         authenticationService.authenticate(request.email, request.password)
             .let { ResponseDto<JwtResponseDto>().makeSuccessResponse(it)}
 
-
-
 }
